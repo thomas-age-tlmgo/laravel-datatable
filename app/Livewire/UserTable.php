@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Builder;
 
 final class UserTable extends DataTable
 {
-    public function boot(): void
+    public function mount(): void
     {
         $this->sortField = 'name';
     }
